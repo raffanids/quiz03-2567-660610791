@@ -20,8 +20,8 @@ export const POST = async (request: NextRequest) => {
      },
      { status: 400 }
    );
-
-  const token = "Replace this with token creation";
+   
+  const token = nanoid();
 
   return NextResponse.json({ ok: true, token });
 };
